@@ -6,6 +6,7 @@ import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { SiteHeader } from "@/components/ui/site-header";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -34,6 +35,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <SiteHeader />
           {children}
           <ScrollProgress />
         </ThemeProvider>
