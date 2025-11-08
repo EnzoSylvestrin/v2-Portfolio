@@ -5,8 +5,8 @@ import { Lato } from "next/font/google";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 import "./globals.css";
+import { SiteHeader } from "@/components/ui/header";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { SiteHeader } from "@/components/ui/site-header";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" suppressHydrationWarning>
-      <body
-        className={`${lato.variable} antialiased`}
-      >
+      <body className={`${lato.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
